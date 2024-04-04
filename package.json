@@ -1,4 +1,5 @@
 {
+  "homepage":"https://Chakri-11.github.io/RealEstate/",
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "nodemon": "^3.1.0",
@@ -17,6 +21,7 @@
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.2",
     "react-scroll": "^1.9.0"
+
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
@@ -31,5 +36,6 @@
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.4"
+
   }
 }
